@@ -8,3 +8,4 @@ These correspond to the files:
 TODO
 
 1. Make pseudo plotting script (including reading the data)
+2. Update the pickle files
