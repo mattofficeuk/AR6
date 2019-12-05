@@ -1,7 +1,7 @@
 # README
 
 ## Citation: Aerosol forced AMOC variability in CMIP6 historical simulations.
-Matthew Menary, Jon Robson et al. (Submitted to GRL, December 2019)
+Matthew Menary, Jon Robson et al. (To be Submitted to GRL, December 2019)
 
 This repository contains the processed AMOC index data, along with various verification plots. I am using the v-velocities rather than the stream function variable(s), and I end up with a temporally constant offset between my AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
 
