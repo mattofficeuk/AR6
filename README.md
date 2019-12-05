@@ -19,7 +19,7 @@ It can be read into Python2.7 by doing:
 
 with open ('Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl') as handle:
 
-  amoc_c5_ts, amoc_c6_ts, cmip5_models, cmip6_models, year = pickle.load(handle)
+... amoc_c5_ts, amoc_c6_ts, cmip5_models, cmip6_models, year = pickle.load(handle)
   
 The AMOC variables have the following shape: [models, experiments, ensemble-members, latitudes, time]
 
@@ -82,7 +82,7 @@ To read in (to Python2.7):
 
 with open ('Figure_AR6_DAMIP_AMOC_26N_1000m.pkl') as handle:
 
-  amoc_damip6_ts, damip6_models, year = pickle.load(handle)
+... amoc_damip6_ts, damip6_models, year = pickle.load(handle)
   
 Experiments:
 experiments_damip6 = ['historical', 'hist-aer', 'hist-GHG', 'hist-nat', 'hist-stratO3']
