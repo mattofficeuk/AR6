@@ -7,19 +7,13 @@ Figure_AR6_CMIP5-6_AMOC_35N_1000m_Anom-1s.d.Shaded.png
 ```
 
 ```
-import netCDF4
 import numpy as np
-import os
-import sys
 import pickle
-import glob
 
 import matplotlib.pyplot as plt
-from matplotlib.colors import BoundaryNorm
-from matplotlib.ticker import MaxNLocator
 import matplotlib.gridspec as gridspec
 
-save_file = 'Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl'
+save_file = '/data/mmenary/python_saves/Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl'
 with open(save_file, 'rb') as handle:
     print "Loading data: {:s}".format(save_file)
     amoc_c5_ts, amoc_c6_ts, cmip5_models, cmip6_models, year = pickle.load(handle)
@@ -35,8 +29,8 @@ def anomalise3d(in_arr, t0, t1):
 target_lats = [26.5, 35]
 experiments_cmip5 = ['rcp45', 'rcp85']
 experiments_cmip6 = ['ssp119', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
-
 nt = len(year)
+
 y0, y1 = 1860, 1880
 t0 = np.argwhere(year == y0)[0][0]
 t1 = np.argwhere(year == y1)[0][0]
