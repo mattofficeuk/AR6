@@ -7,7 +7,7 @@ This repository contains the processed AMOC index data, along with various verif
 
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
-See PLOTTING.md for how I plotted this data
+See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how I plotted this data
 
 ### Data file 1: Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl
 (see bottom of README for DAMIP instructions)
