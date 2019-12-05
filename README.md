@@ -3,11 +3,13 @@
 ## Citation: Aerosol forced AMOC variability in CMIP6 historical simulations.
 Matthew Menary, Jon Robson et al. (To be Submitted to GRL, December 2019)
 
-This repository contains the processed AMOC index data, along with various verification plots. I am using the v-velocities rather than the stream function variable(s), and I end up with a temporally constant offset between my AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
-
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
 See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how I plotted this data
+
+This repository contains the processed AMOC index data, along with various verification plots. I am using the v-velocities rather than the stream function variable(s), and I end up with a temporally constant offset between my AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
+
+A comparison of the two methods for the models that have all the data can be seen in the **Method_Comparison** folder.
 
 ### Data file 1: Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl
 (see bottom of README for DAMIP instructions)
