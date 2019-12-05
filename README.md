@@ -63,10 +63,10 @@ t0 = np.argwhere(year == y0)[0][0]
 t1 = np.argwhere(year == y1)[0][0]
 
 amoc_c5_ts_lat = amoc_c5_ts[:, :, :, ilat_choice, :]
-amoc_c5_ts_lat_ensmn = amoc_c5_ts_lat.mean(axis=2)
-amoc_c5_ts_lat_ensmn_timeanom = anomalise3d(amoc_c5_ts_lat_ensmn, t0, t1)
-amoc_c5_ts_lat_ensmn_timeanom_c5mn = amoc_c5_ts_lat_ensmn_timeanom.mean(axis=0)
-amoc_c5_ts_lat_ensmn_timeanom_c5sd = amoc_c5_ts_lat_ensmn_timeanom.std(axis=0)
+  amoc_c5_ts_lat_ensmn = amoc_c5_ts_lat.mean(axis=2)
+    amoc_c5_ts_lat_ensmn_timeanom = anomalise3d(amoc_c5_ts_lat_ensmn, t0, t1)
+      amoc_c5_ts_lat_ensmn_timeanom_c5mn = amoc_c5_ts_lat_ensmn_timeanom.mean(axis=0)
+        amoc_c5_ts_lat_ensmn_timeanom_c5sd = amoc_c5_ts_lat_ensmn_timeanom.std(axis=0)
 
 Data file 2:
 **Figure_AR6_DAMIP_AMOC_26N_1000m.pkl**
@@ -90,8 +90,8 @@ t0 = np.argwhere(year == y0)[0][0]
 t1 = np.argwhere(year == y1)[0][0]
 
 amoc_damip6_ts_lat = amoc_damip6_ts[:, :, :, ilat_choice, :]
-amoc_damip6_ts_lat_ensmn = amoc_damip6_ts_lat.mean(axis=2)
-amoc_damip6_ts_lat_ensmn_timeanom = anomalise3d(amoc_damip6_ts_lat_ensmn, t0, t1)
-amoc_damip6_ts_lat_ensmn_timeanom_mmm = amoc_damip6_ts_lat_ensmn_timeanom.mean(axis=0)
-amoc_damip6_ts_lat_ensmn_timeanom_mmsd = amoc_damip6_ts_lat_ensmn_timeanom.std(axis=0)
+  amoc_damip6_ts_lat_ensmn = amoc_damip6_ts_lat.mean(axis=2)
+    amoc_damip6_ts_lat_ensmn_timeanom = anomalise3d(amoc_damip6_ts_lat_ensmn, t0, t1)
+      amoc_damip6_ts_lat_ensmn_timeanom_mmm = amoc_damip6_ts_lat_ensmn_timeanom.mean(axis=0)
+        amoc_damip6_ts_lat_ensmn_timeanom_mmsd = amoc_damip6_ts_lat_ensmn_timeanom.std(axis=0)
   
