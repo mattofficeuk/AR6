@@ -3,7 +3,7 @@
 ## Citation: Aerosol forced AMOC variability in CMIP6 historical simulations.
 Matthew Menary, Jon Robson et al. (Submitted to GRL, December 2019)
 
-This repository contains the processed AMOC index data, along with various verification plots.
+This repository contains the processed AMOC index data, along with various verification plots. I am using the v-velocities rather than the stream function variable(s), and I end up with a temporally constant offset between my AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
 
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
@@ -13,6 +13,8 @@ See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how I plotted this dat
 (see bottom of README for DAMIP instructions)
 
 This python pickle file was created using Python2.7. It contains a list of 5 variables. The first is the AMOC index in CMIP5 models. The second is the AMOC index in CMIP6 models. The third is a list of the CMIP5 models, which correspond to the same indices as in the AMOC array. The fourth is the same but for CMIP6. The fifth is the year (all data is annual mean values).
+
+**The AMOC arrays are masked-arrays, with missing models/ensemble-members/years masked. When manipulating them, always ensure to use masked array-compatible operations**
 
 It can be read into Python2.7 by doing:
 
