@@ -18,6 +18,7 @@ This python pickle file was created using Python2.7. It contains a list of 5 var
 It can be read into Python2.7 by doing:
 
 with open ('Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl') as handle:
+
   amoc_c5_ts, amoc_c6_ts, cmip5_models, cmip6_models, year = pickle.load(handle)
   
 The AMOC variables have the following shape: [models, experiments, ensemble-members, latitudes, time]
@@ -80,6 +81,7 @@ This data is structurally the same as the CMIP5/6 historical/scenario data above
 To read in (to Python2.7):
 
 with open ('Figure_AR6_DAMIP_AMOC_26N_1000m.pkl') as handle:
+
   amoc_damip6_ts, damip6_models, year = pickle.load(handle)
   
 Experiments:
