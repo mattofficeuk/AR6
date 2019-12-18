@@ -37,7 +37,7 @@ If using the *JSON* data then the following will read the data into the same for
 with open('Figure_AR6_CMIP5-6_AMOC_35N_1000m.json', 'r') as handle:
     json_load = json.load(handle)
     
-amoc_c5_ts = np.ma.asarray(json_load["amoc_c5_ts"])
+amoc_c5_ts = np.ma.asarray(json_load["amoc_c5_ts"])  # Note the use of numpy masked arrays (np.ma)
 amoc_c6_ts = np.ma.asarray(json_load["amoc_c6_ts"])
 cmip5_models = json_load["cmip5_models"]
 cmip6_models = json_load["cmip6_models"]
@@ -116,7 +116,7 @@ If using the *JSON* data then the following will read the data into the same for
 with open('Figure_AR6_DAMIP_AMOC_26N_1000m.json', 'r') as handle:
     json_load = json.load(handle)
     
-amoc_damip6_ts = np.ma.asarray(json_load["amoc_damip6_ts"])
+amoc_damip6_ts = np.ma.asarray(json_load["amoc_damip6_ts"])  # Note the use of numpy masked arrays (np.ma)
 damip6_models = json_load["damip6_models"]
 year = np.asarray(json_load["year"])
 ```
