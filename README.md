@@ -7,7 +7,7 @@ Matthew Menary, Jon Robson, Richard Allan, Ben Booth, Christophe Cassou, Guillau
 
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
-See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how I plotted this data
+See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how we plotted this data
 
 This repository contains the processed AMOC index data, along with various verification plots. We use the v-velocities rather than the stream function variable(s), and we end up with a temporally constant offset between our AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
 
@@ -40,10 +40,10 @@ experiments_cmip5 = ['rcp45', 'rcp85']
 experiments_cmip6 = ['ssp119', 'ssp126', 'ssp245', 'ssp370', 'ssp585']
 ```
 
-Note: All scenario experiments also contain the historical data. Where there was an overlap between historical or scenario data for some reason, I chose the scenario data. For example, to plot the "historical" experiment in CMIP5, just plot the first ~150 years of the array. Reminder: Scenarios begin in 2005 for CMIP5 and 2015 for CMIP6.
+Note: All scenario experiments also contain the historical data. Where there was an overlap between historical or scenario data for some reason, we chose the scenario data. For example, to plot the "historical" experiment in CMIP5, just plot the first ~150 years of the array. Reminder: Scenarios begin in 2005 for CMIP5 and 2015 for CMIP6.
 
 #### Ensemble members:
-These are the first 10 ensemble members r${ens_num}i1p1f1 in the respective experiments. Where "f1" was not available I have used "f2" or "f3" and so on.
+These are the first 10 ensemble members r${ens_num}i1p1f1 in the respective experiments. Where "f1" was not available we have used "f2" or "f3" and so on.
 
 #### Latitudes:
 26.5N (index 0) or 35N (index 1)
@@ -53,7 +53,7 @@ The simulated year, from 1850 to 2100 inclusive
 
 ### Method:
 ```
-To create the figure: Figure_AR6_CMIP5-6_AMOC_35N_1000m_Anom-1s.d.Shaded.png I followed the following algorithm:
+To create the figure: Figure_AR6_CMIP5-6_AMOC_35N_1000m_Anom-1s.d.Shaded.png we followed the following algorithm:
 1) Choose latitude
 2) Compute initial-condition ensemble mean for each model
 3) Construct temporal anomaly (over all remaining dimensions)
@@ -115,7 +115,7 @@ amoc_damip6_ts_lat_ensmn_timeanom_mmsd = amoc_damip6_ts_lat_ensmn_timeanom.std(a
 
 ### Acknowledgement
 
-I acknowledge the World Climate Research Programme, which, through its Working Group on Coupled Modelling, coordinated and promoted CMIP6. I thank the climate modeling groups for producing and making available their model output, the Earth System Grid Federation (ESGF) for archiving the data and providing access, and the multiple funding agencies who support CMIP6 and ESGF.
+We acknowledge the World Climate Research Programme, which, through its Working Group on Coupled Modelling, coordinated and promoted CMIP6. We thank the climate modeling groups for producing and making available their model output, the Earth System Grid Federation (ESGF) for archiving the data and providing access, and the multiple funding agencies who support CMIP6 and ESGF.
 
 ### License
 
