@@ -15,6 +15,8 @@ A comparison of the two methods for the models that have all the data can be see
 
 Raw time series and time-mean streamfunctions (issues above notwithstanding) of all the data can be seen in the **Verification_Plots** folder.
 
+The data is stored in two versions. Python pickle files in the **pickle_data** folder, and JSON files in the **JSON_data** folder. The following guide assumes use of the *pickle* data. The *JSON* data is the same except stored as a dictionary rather than a list.
+
 ### Data file 1: Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl
 (see bottom of README for DAMIP instructions)
 
@@ -27,6 +29,19 @@ It can be read into Python2.7 by doing:
 ```
 with open ('Figure_AR6_CMIP5-6_AMOC_35N_1000m.pkl') as handle:
   amoc_c5_ts, amoc_c6_ts, cmip5_models, cmip6_models, year = pickle.load(handle)
+```
+
+If using the *JSON* data then the following will read the data into the same format:
+
+```
+with open('Figure_AR6_CMIP5-6_AMOC_35N_1000m.json', 'r') as handle:
+    json_load = json.load(handle)
+    
+amoc_c5_ts = np.ma.asarray(json_load["amoc_c5_ts"])
+amoc_c6_ts = np.ma.asarray(json_load["amoc_c6_ts"])
+cmip5_models = json_load["cmip5_models"]
+cmip6_models = json_load["cmip6_models"]
+year = np.asarray(json_load["year"])
 ```
 
 The AMOC variables have the following shape: [models, experiments, ensemble-members, latitudes, time]
@@ -92,6 +107,18 @@ To read in (to Python2.7):
 ```
 with open ('Figure_AR6_DAMIP_AMOC_26N_1000m.pkl') as handle:
   amoc_damip6_ts, damip6_models, year = pickle.load(handle)
+```
+
+
+If using the *JSON* data then the following will read the data into the same format:
+
+```
+with open('Figure_AR6_DAMIP_AMOC_26N_1000m.json', 'r') as handle:
+    json_load = json.load(handle)
+    
+amoc_damip6_ts = np.ma.asarray(json_load["amoc_damip6_ts"])
+damip6_models = json_load["damip6_models"]
+year = np.asarray(json_load["year"])
 ```
 
 ### Experiments:
