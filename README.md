@@ -1,7 +1,9 @@
 # README
 
-## Citation: Aerosol forced AMOC variability in CMIP6 historical simulations.
-Matthew Menary, Jon Robson et al. (To be Submitted to GRL, December 2019)
+## Citation: Aerosol-forced AMOC change in CMIP6 historical simulations.
+Matthew Menary, Jon Robson, Richard Allan, Ben Booth, Christophe Cassou, Guillaume Gastineau, Jonathan Gregory, Dan Hodson, Colin Jones, Juliette Mignot, Mark Ringer, Rowan Sutton, Laura Wilcox, Rong Zhang
+
+(Submitted to Nature Geoscience, December 2019)
 
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
