@@ -3,7 +3,7 @@
 ## Citation: Aerosol-forced AMOC change in CMIP6 historical simulations.
 Matthew Menary, Jon Robson, Richard Allan, Ben Booth, Christophe Cassou, Guillaume Gastineau, Jonathan Gregory, Dan Hodson, Colin Jones, Juliette Mignot, Mark Ringer, Rowan Sutton, Laura Wilcox, Rong Zhang
 
-(Submitted to Nature Geoscience, December 2019)
+(Submitted to GRL, March, 2020)
 
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
