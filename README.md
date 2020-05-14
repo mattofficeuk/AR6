@@ -5,6 +5,12 @@ Matthew Menary, Jon Robson, Richard Allan, Ben Booth, Christophe Cassou, Guillau
 
 (Submitted to GRL, March, 2020)
 
+**Data updated: 14th May 2020.** Details:
+
+1) Improved method of calculating the AMOC, by summing upwards from the ocean bottom
+2) Improved method of calculating the AMOC, by computing a more precise zonal integral
+3) Added more models
+
 This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
 
 See **PLOTTING_CMIP5-6.md** and **PLOTTING_DAMIP.md** for how we plotted this data
@@ -36,7 +42,7 @@ If using the *JSON* data then the following will read the data into the same for
 ```
 with open('Figure_AR6_CMIP5-6_AMOC_35N_1000m.json', 'r') as handle:
     json_load = json.load(handle)
-    
+
 amoc_c5_ts = np.ma.asarray(json_load["amoc_c5_ts"])  # Note the use of numpy masked arrays (np.ma)
 amoc_c6_ts = np.ma.asarray(json_load["amoc_c6_ts"])
 cmip5_models = json_load["cmip5_models"]
@@ -115,7 +121,7 @@ If using the *JSON* data then the following will read the data into the same for
 ```
 with open('Figure_AR6_DAMIP_AMOC_26N_1000m.json', 'r') as handle:
     json_load = json.load(handle)
-    
+
 amoc_damip6_ts = np.ma.asarray(json_load["amoc_damip6_ts"])  # Note the use of numpy masked arrays (np.ma)
 damip6_models = json_load["damip6_models"]
 year = np.asarray(json_load["year"])
