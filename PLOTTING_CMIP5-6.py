@@ -67,6 +67,7 @@ plt.plot(year, amoc_damip6_ts_lat_ensmn_timeanom_mmm[1:, :].sum(axis=0), lw=lw2,
         
 # plt.plot(rapid_year, rapid_anom, color='k', lw=lw1, label='RAPID (anomaly adjusted)')
 
+# This will make the figure shown in README.md
 plt.xlim(xlim)
 plt.ylim(ylim)
 plt.axhline(0, linestyle=':', color='k')
