@@ -1,3 +1,5 @@
+# Originally run using Python2.7
+
 import numpy as np
 import pickle
 
