@@ -11,7 +11,7 @@ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL088166
 2) Improved method of calculating the AMOC, by computing a more precise zonal integral
 3) Added more models
 
-This data was processed by Matthew Menary matthew.menary@locean-ipsl.upmc.fr
+This data was processed by Matthew Menary matthew.menary@locean.ipsl.fr
 
 See **PLOTTING_CMIP5-6.py** and **PLOTTING_DAMIP.py** for how we plotted this data
 
