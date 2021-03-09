@@ -13,7 +13,7 @@ https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL088166
 
 This data was processed by Matthew Menary matthew.menary@locean.ipsl.fr
 
-See **PLOTTING_CMIP5-6.py** and **PLOTTING_DAMIP.py** for how we plotted this data
+See **PLOTTING_CMIP5-6.py** and **PLOTTING_DAMIP.py** in the **Code** folder for how we plotted this data
 
 This repository contains the processed AMOC index data, along with various verification plots. We use the v-velocities rather than the stream function variable(s), and we end up with a temporally constant offset between our AMOC indices and those derived from the actual streamfunctions. As such, it only makes sense to look at temporal anomalies. The reason for this offset is unclear but likely the result of having to make assumptions on grid-cell widths/heights and masking choices in order to use the v-velocities (not all of this data is uploaded to the CMIP archive). The reason for using the v-velocities is that there are many more models available that way.
 
