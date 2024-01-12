@@ -5,6 +5,8 @@ Matthew Menary, Jon Robson, Richard Allan, Ben Booth, Christophe Cassou, Guillau
 
 https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL088166
 
+![Figure_AR6_CMIP5-6_AMOC_35N_1000m_Anom-1s d Shaded](https://github.com/mattofficeuk/AR6/assets/39481661/b7d138ab-7783-4f65-b6b0-8e1935073434)
+
 **Data updated: 14th May 2020.** Details:
 
 1) Improved method of calculating the AMOC, by summing upwards from the ocean bottom
